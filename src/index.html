@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazing Thailand</title>
+    <!--css link-->
+    <link rel="stylesheet" href="index.css" />
+    <!--icon link-->
+    <script
+      src="https://kit.fontawesome.com/cd5bfe4c13.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Mynerve&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--start header-->
+    <div class="header">
+      <nav id="navBar">
+        <a href="index.html">
+          <img
+            src="media\amazing-thailand-logo-vector-removebg-preview.png"
+            class="logo"
+          />
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#places">Popular Places</a></li>
+
+          <li><a href="cuisine.html">Cuisine and delicacies</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <h1 class="amaze">Amazing Thailand</h1>
+      </div>
+    </div>
+
+    <!--end header-->
+
+    <!--Popular places list-->
+    <div class="container" id="places">
+      <h2 class="sub-title">Popular places</h2>
+      <div class="exclusives">
+        <div class="zoom">
+          <!--zoom image when hover-->
+          <img
+            src="https://i.pinimg.com/474x/b0/20/06/b020061262736d5670d6b402c4c23bcc.jpg"
+            class="imgloc"
+          />
+          <span>
+            <h3>Phuket</h3>
+          </span>
+        </div>
+        <div class="zoom">
+          <img
+            src="https://i.pinimg.com/564x/f2/5e/c1/f25ec1209d1d0aa8dae80a054ddc47c7.jpg"
+            class="imgloc"
+          />
+          <span>
+            <h3>Pattaya</h3>
+          </span>
+        </div>
+        <div class="zoom">
+          <img
+            src="https://i.pinimg.com/564x/2c/03/ca/2c03ca4c0be9a5603f36364d4b1cd22b.jpg"
+            class="imgloc"
+          />
+          <span>
+            <h3>Hat Yai</h3>
+          </span>
+        </div>
+        <div class="zoom">
+          <img
+            src="https://64.media.tumblr.com/eae632672f70cb355c62040a85dde02f/e8ea723282b734df-23/s500x750/36b83ce2fd94ae271979ccb90715f61f2db9ae67.jpg"
+            class="imgloc"
+          />
+          <span>
+            <h3>Krabi</h3>
+          </span>
+        </div>
+        <div class="zoom">
+          <img
+            src="https://64.media.tumblr.com/bcb07213a3ccd9c261db6460df7becb6/7113c7a934815e19-ec/s500x750/7600a046411ceebe775a41366a0826dcbda1a847.jpg"
+            class="imgloc"
+          />
+          <span>
+            <h3>Bangkok</h3>
+          </span>
+        </div>
+        <div class="zoom">
+          <img
+            src="https://images.pexels.com/photos/2070485/pexels-photo-2070485.jpeg?auto=compress&cs=tinysrgb&w=600"
+            class="imgloc"
+          />
+          <span>
+            <h3>Ayutthaya</h3>
+          </span>
+        </div>
+        <div class="zoom">
+          <img
+            src="https://i.pinimg.com/564x/81/a1/34/81a134d3b7ca1e99a89dbacee92d935c.jpg"
+            class="imgloc"
+          />
+          <span>
+            <h3>Kanchanaburi</h3>
+          </span>
+        </div>
+        <div class="zoom">
+          <img
+            src="https://i.pinimg.com/564x/82/14/59/821459131e7da9820321bd5ba655a566.jpg"
+            class="imgloc"
+          />
+          <span>
+            <h3>Chiang Mai</h3>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!--big rectangle-->
+
+    <!-- weather API -->
+    <center>
+      <div class="cta">
+        <form method="POST" id="weather">
+          <strong
+            ><h3>
+              Wonder what it is<br />
+              like in Thailand?
+            </h3></strong
+          >
+          <div class="align">
+            <select name="location" id="city" required>
+              <option value="" class="selected">Select City</option>
+              <option>Chiang Mai</option>
+              <option>Bangkok</option>
+              <option>Phuket</option>
+              <option>Pattaya</option>
+              <option>Surat Thani</option>
+              <option>Hat Yai</option>
+            </select>
+            <input
+              id="postSubmit"
+              type="submit"
+              value="Search"
+              class="button"
+            />
+          </div>
+        </form>
+        <main></main>
+      </div>
+    </center>
+    <script src="function.js"></script>
+
+    <!--place desc-->
+    <div class="main">
+      <br /><br />
+      <h1 class="sub-title">Bucket List destinations</h1>
+      <hr />
+
+      <div class="container2">
+        <div class="box">
+          <div class="imgBx">
+            <img
+              src="https://images.pexels.com/photos/3538236/pexels-photo-3538236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            />
+          </div>
+          <div class="content2">
+            <div>
+              <h2>Bangkok</h2>
+              <!--description-->
+              <p>
+                Bangkok, Thailand’s capital, is a large city known for ornate
+                shrines and vibrant street life. The boat-filled Chao Phraya
+                River feeds its network of canals.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img
+              src="https://i.pinimg.com/564x/02/d3/21/02d3217806ca39c3c4ea31f9dc05275a.jpg"
+            />
+          </div>
+          <div class="content2">
+            <div>
+              <h2>Chiang Mai</h2>
+              <!--description-->
+              <p>
+                Chiang Mai is a city in mountainous northern Thailand. Founded
+                in 1296, it was capital of the independent Lanna Kingdom until
+                1558. It famous for elephant sanctuary.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img
+              src="https://images.pexels.com/photos/13750354/pexels-photo-13750354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            />
+          </div>
+          <div class="content2">
+            <div>
+              <h2>Phuket</h2>
+              <!--description-->
+              <p>
+                Phuket is the largest island in Thailand. Phuket is famous for a
+                number of things like exotic beaches, vibrant nightlife,
+                colorful night markets, delicious seafood, white marble Big
+                Buddha and of course scuba diving.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img
+              src="https://i.pinimg.com/564x/24/fe/02/24fe025376ef9c5a0920c2df63c35ab0.jpg"
+            />
+          </div>
+          <div class="content2">
+            <div>
+              <h2>Hat Yai</h2>
+              <!--description-->
+              <p>
+                Hat Yai, a city in Thailand's far south near the Malaysian
+                border, is a sprawling commercial hub and shopping destination.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imgBx">
+            <img
+              src="https://images.pexels.com/photos/4736426/pexels-photo-4736426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            />
+          </div>
+          <div class="content2">
+            <div>
+              <h2>Krabi</h2>
+              <!--description-->
+              <p>
+                Krabi, the capital of southern Thailand's Krabi Province, is a
+                resort town near the Andaman coast. It lies in an area of
+                limestone karsts and mangrove forest.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end of place desc-->
+    <!--FOOTER OF THE PAGE-->
+    <div class="footer">
+      <a href="https://www.facebook.com/AmazingThailand"
+        ><i class="fab fa-facebook-f"></i
+      ></a><!--active link-->
+      <a href="https://www.youtube.com/@Thailand"
+        ><i class="fab fa-youtube"></i
+      ></a><!--active link-->
+      <a
+        href="https://twitter.com/AmazingThailand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+        ><i class="fab fa-twitter"></i
+      ></a><!--active link-->
+      <a href="https://www.tourismthailand.org/home"
+        ><i class="fa-sharp fa-solid fa-globe"></i
+      ></a><!--active link-->
+      <a href="https://www.instagram.com/tourismthailand/"
+        ><i class="fab fa-instagram"></i
+      ></a><!--active link-->
+      <hr />
+      <div class="footer-bottom">
+        <img src="media\amazing-thailand-logo-vector-removebg-preview.png" />
+        <br />
+        <p>Copyright © 2023, Amazing Thailand.</p>
+      </div>
+    </div>
+  </body>
+</html>

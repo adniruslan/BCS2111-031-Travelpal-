@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazing Thailand</title>
+    <link rel="stylesheet" href="cuisine.css" /><!--css link-->
+    <script
+      src="https://kit.fontawesome.com/cd5bfe4c13.js"
+      crossorigin="anonymous"
+    ></script><!--icon link-->
+  </head>
+  <body>
+    <div class="header">
+      <nav id="navBar">
+        <a href="index.html">
+          <img
+            src="media\amazing-thailand-logo-vector-removebg-preview.png"
+            class="logo"
+          /><!--logo with link-->
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li></li>
+          <li><a href="index.html #places">Popular Places</a></li>
+
+          <li>
+            <a href="cuisine.html" class="active">Cuisine and delicacies</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container">
+        <div class="input-text">
+          <strong><p class="message">I want Thai Food&nbsp;</p></strong>
+        </div>
+      </div>
+    </div>
+    <!--end nav bar-->
+    <!--list of food-->
+    <div class="container">
+      <h2 class="sub-title">Exclusives</h2>
+      <div class="exclusives">
+        <div class="zoom">
+          <img
+            src="https://i.pinimg.com/564x/b6/07/6e/b6076e8c8a5723d30960501ac45dc292.jpg"
+            class="imgloc"
+          />
+          <span>
+            <h3>Som Tam</h3>
+          </span>
+        </div>
+        <div class="zoom">
+          <img
+            src="https://i.pinimg.com/564x/fb/0d/86/fb0d860dc87ea87ff163b0dcb0d57cef.jpg"
+            class="imgloc"
+          />
+          <span>
+            <h3>Tom Yum</h3>
+          </span>
+        </div>
+        <div class="zoom">
+          <img
+            src="https://i.pinimg.com/564x/de/67/6e/de676ebf5b8f68ce1d694ec49bfa8643.jpg"
+            class="imgloc"
+          />
+          <span>
+            <h3>Laab</h3>
+          </span>
+        </div>
+        <div class="zoom">
+          <img
+            src="https://i.pinimg.com/564x/6c/43/dc/6c43dc8f674f1d28ee170e5752e4b23a.jpg"
+            class="imgloc"
+          />
+          <span>
+            <h3>Thai Green Curry</h3>
+          </span>
+        </div>
+        <div class="zoom">
+          <img
+            src="https://i.pinimg.com/564x/03/8a/ce/038aced946c11a61960de9dd601dd910.jpg"
+            class="imgloc"
+          />
+          <span>
+            <h3>Pad See Ew</h3>
+          </span>
+        </div>
+        <div class="zoom">
+          <img
+            src="https://i.pinimg.com/564x/99/b1/90/99b1901a9c333de7640d77d28598ecfb.jpg"
+            class="imgloc"
+          />
+          <span>
+            <h3>Beef Massaman Curry</h3>
+          </span>
+        </div>
+        <div class="zoom">
+          <img
+            src="https://i.pinimg.com/564x/50/2b/86/502b869259126f307ba5ab9cf97a96b1.jpg"
+            class="imgloc"
+          />
+          <span>
+            <h3>Khao Niao Mamuang</h3>
+          </span>
+        </div>
+        <div class="zoom">
+          <img
+            src="https://i.pinimg.com/736x/40/01/fa/4001fa372a374a5f34a52fffa216122e.jpg"
+            class="imgloc"
+          />
+          <span>
+            <h3>Pad Kra Pao</h3>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!--FOOD API-->
+    <center>
+      <div class="cta">
+        <form method="POST" id="dish">
+          <span>
+            <h3>
+              Need a recipe?<br />
+              Let P'Nam help you!
+            </h3>
+          </span>
+          <div class="align">
+            <select name="menu" id="menu" required class="selected">
+              <option value="">Select Dish</option>
+              <option>Thai Green Curry</option>
+              <option>Massaman Beef Curry</option>
+              <option>Pad See Ew</option>
+            </select>
+            <input
+              id="postSubmit"
+              type="submit"
+              value="Search"
+              class="button"
+            />
+          </div>
+        </form>
+      </div>
+    </center>
+    <!--request recipe-->
+    <h3 class="rq">Request any Thai recipes now!</h3>
+    <p class="rq">
+      Your favorite dish's recipe is unavailable? No worries request now and
+      comeback later!
+    </p>
+    <div class="container-rq">
+      <div class="content-rq">
+        <form class="request">
+          <input class="add-menu" type="text" placeholder="Menu" />
+          <button class="submit-menu" type="button" onclick="rq()">
+            <span class="before-submit">Request now</span>
+            <span class="after-submit"
+              >Thank you, we will update the menu later!</span
+            >
+          </button>
+        </form>
+      </div>
+    </div>
+    <br /><br />
+    <center>
+      <main></main>
+    </center>
+    <!--calling js function-->
+    <script src="cuisine.js"></script>
+    <br />
+    <!--footer of the page-->
+    <div class="footer">
+      <a href="https://www.facebook.com/AmazingThailand"
+        ><i class="fa fa-facebook-f"></i
+      ></a><!--active link-->
+      <a href="https://www.youtube.com/@Thailand"
+        ><i class="fa-brands fa-youtube"></i
+      ></a><!--active link-->
+      <a
+        href="https://twitter.com/AmazingThailand?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor/"
+        ><i class="fab fa-twitter"></i
+      ></a><!--active link-->
+      <a href="https://www.tourismthailand.org/home"
+        ><i class="fa-sharp fa-solid fa-globe"></i
+      ></a><!--active link-->
+      <a href="https://www.instagram.com/tourismthailand/"
+        ><i class="fab fa-instagram"></i
+      ></a><!--active link-->
+      <hr />
+      <div class="footer-bottom">
+        <img src="media\amazing-thailand-logo-vector-removebg-preview.png" />
+        <br />
+        <p>Copyright © 2023, Amazing Thailand.</p>
+      </div>
+    </div>
+  </body>
+</html>
